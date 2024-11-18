@@ -1,11 +1,11 @@
 from typing import List
-from llmperf.ray_clients.litellm_client import LiteLLMClient
-from llmperf.ray_clients.openai_chat_completions_client import (
+from src.llmperf.ray_clients.litellm_client import LiteLLMClient
+from src.llmperf.ray_clients.openai_chat_completions_client import (
     OpenAIChatCompletionsClient,
 )
-from llmperf.ray_clients.sagemaker_client import SageMakerClient
-from llmperf.ray_clients.vertexai_client import VertexAIClient
-from llmperf.ray_llm_client import LLMClient
+from src.llmperf.ray_clients.sagemaker_client import SageMakerClient
+from src.llmperf.ray_clients.vertexai_client import VertexAIClient
+from src.llmperf.ray_llm_client import LLMClient
 
 
 SUPPORTED_APIS = ["openai", "anthropic", "litellm"]

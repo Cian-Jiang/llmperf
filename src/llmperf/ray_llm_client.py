@@ -1,7 +1,7 @@
 import abc
 from typing import Any, Dict, Tuple
 
-from llmperf.models import RequestConfig
+from src.llmperf.models import RequestConfig
 
 
 class LLMClient:

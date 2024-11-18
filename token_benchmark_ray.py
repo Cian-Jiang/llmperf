@@ -11,12 +11,12 @@ from typing import Any, Dict, List, Optional, Tuple
 import pandas as pd
 import ray
 
-from llmperf import common_metrics
-from llmperf.common import SUPPORTED_APIS, construct_clients
+from src.llmperf import common_metrics
+from src.llmperf.common import SUPPORTED_APIS, construct_clients
 
-from llmperf.models import RequestConfig
-from llmperf.requests_launcher import RequestsLauncher
-from llmperf.utils import (
+from src.llmperf.models import RequestConfig
+from src.llmperf.requests_launcher import RequestsLauncher
+from src.llmperf.utils import (
     randomly_sample_sonnet_lines_prompt,
     LLMPerfResults,
     sample_random_positive_int,

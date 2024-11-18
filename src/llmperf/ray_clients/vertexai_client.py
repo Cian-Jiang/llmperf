@@ -7,9 +7,9 @@ import ray
 import requests
 from transformers import LlamaTokenizerFast
 
-from llmperf.ray_llm_client import LLMClient
-from llmperf.models import RequestConfig
-from llmperf import common_metrics
+from src.llmperf.ray_llm_client import LLMClient
+from src.llmperf.models import RequestConfig
+from src.llmperf import common_metrics
 
 
 @ray.remote
